@@ -181,7 +181,7 @@ body {
     align-items: center;
     margin-right: 40px;
     transition:  transform 0.3s;
-    visibility: hidden;
+    visibility: visible;
   }
   
   .arrow {
@@ -201,9 +201,8 @@ body {
   }
   
   .nav-small {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    position: fixed;
+    display: none;
+    position: absolute;
     top: 76px;
     bottom: 0;
     right: 0;
@@ -211,6 +210,12 @@ body {
     background-color: #FFE455;
     transition: color 0.5s;
     transition: background-color 0.5s;
+  }
+  
+  .nav-small.active {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    position: fixed;
   }
   
   .nav-small-link-wrapper {
