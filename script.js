@@ -71,86 +71,51 @@ if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
   videoHeight = backgroundVideo.offsetHeight;
 }
 
-if (window.innerWidth <= 840) {
-  if (breadcrumbsLi.length == 1) {
-    contentWrapper.classList.add("small");
-  }
-  breadcrumbs.classList.add("small");
-  if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
-    drStoneWrapper.classList.add("small");
-    cellsAtWorkWrapper.classList.add("small");
-  }
-} else {
-  if (breadcrumbsLi.length == 1) {
-    contentWrapper.classList.remove("small");
-  }
-  breadcrumbs.classList.remove("small");
-  if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
-    drStoneWrapper.classList.remove("small");
-    cellsAtWorkWrapper.classList.remove("small");
-  }
-}
-
-if (window.innerWidth < 1400) {
-  navLinkWrappers.forEach((element) => {
-    element.classList.add('small');
-  });
-  rightNav.classList.add("small");
-  arrowWrapper.style.visibility = "visible";
-} else {
-  navLinkWrappers.forEach((element) => {
-    element.classList.remove('small');
-  });
-  rightNav.classList.remove("small");
-  arrowWrapper.style.visibility = "hidden";
-  navSmall.classList.remove("active");
-}
-
 window.onresize = function() {
 
-  if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
-    videoWidth = backgroundVideo.offsetWidth;
-    fadeHeight = videoFadeTwo.offsetHeight;
-    videoHeight = backgroundVideo.offsetHeight;
-    videoFadeTwo.style.right = ((originalWindowWidth - window.innerwidth - videoFadeTwo.offsetHeight) + "px");
- //   videoFadeTwo.style.right = (((backgroundVideo.offsetWidth)/3 + videoFadeTwo.offsetHeight) + "px");
- //   videoFadeTwo.style.height = backgroundVideo.offsetHeight;
-  }
+//   if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
+//     videoWidth = backgroundVideo.offsetWidth;
+//     fadeHeight = videoFadeTwo.offsetHeight;
+//     videoHeight = backgroundVideo.offsetHeight;
+//     videoFadeTwo.style.right = ((originalWindowWidth - window.innerwidth - videoFadeTwo.offsetHeight) + "px");
+//  //   videoFadeTwo.style.right = (((backgroundVideo.offsetWidth)/3 + videoFadeTwo.offsetHeight) + "px");
+//  //   videoFadeTwo.style.height = backgroundVideo.offsetHeight;
+//   }
 
-  if (window.innerWidth <= 840) {
-    if (breadcrumbsLi.length == 1) {
-      contentWrapper.classList.add("small");
-    }
-    breadcrumbs.classList.add("small");
-    if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
-      drStoneWrapper.classList.add("small");
-      cellsAtWorkWrapper.classList.add("small");
-    }
-  } else {
-    if (breadcrumbsLi.length == 1) {
-      contentWrapper.classList.remove("small");
-    }
-    breadcrumbs.classList.remove("small");
-    if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
-      drStoneWrapper.classList.remove("small");
-      cellsAtWorkWrapper.classList.remove("small");
-    }
-  }
+//   if (window.innerWidth <= 840) {
+//     if (breadcrumbsLi.length == 1) {
+//       contentWrapper.classList.add("small");
+//     }
+//     breadcrumbs.classList.add("small");
+//     if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
+//       drStoneWrapper.classList.add("small");
+//       cellsAtWorkWrapper.classList.add("small");
+//     }
+//   } else {
+//     if (breadcrumbsLi.length == 1) {
+//       contentWrapper.classList.remove("small");
+//     }
+//     breadcrumbs.classList.remove("small");
+//     if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
+//       drStoneWrapper.classList.remove("small");
+//       cellsAtWorkWrapper.classList.remove("small");
+//     }
+//   }
 
-  if (window.innerWidth < 1400) {
-    navLinkWrappers.forEach((element) => {
-      element.classList.add('small');
-    });
-    rightNav.classList.add("small");
-    arrowWrapper.style.visibility = "visible";
-  } else {
-    navLinkWrappers.forEach((element) => {
-      element.classList.remove('small');
-    });
-    rightNav.classList.remove("small");
-    arrowWrapper.style.visibility = "hidden";
-    navSmall.classList.remove("active");
-  }
+//   if (window.innerWidth < 1400) {
+//     navLinkWrappers.forEach((element) => {
+//       element.classList.add('small');
+//     });
+//     rightNav.classList.add("small");
+//     arrowWrapper.style.visibility = "visible";
+//   } else {
+//     navLinkWrappers.forEach((element) => {
+//       element.classList.remove('small');
+//     });
+//     rightNav.classList.remove("small");
+//     arrowWrapper.style.visibility = "hidden";
+//     navSmall.classList.remove("active");
+//   }
 
   if (breadcrumbsLi.length == 1) {
     tallest = 0;
