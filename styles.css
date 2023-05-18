@@ -91,8 +91,9 @@ p3 {
   width: 100%;
 }
 
-.left-nav {
+.nav-link-wrapper-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .nav-link-wrapper {
