@@ -1,107 +1,15 @@
 @media screen and (max-width: 1080px) {
+
   /*Navigation styles*/
-  
-  .nav-link-wrapper.active {
-    border-bottom: 1px solid #6489C6;
-  }
-  
-  .nav-link-wrapper a {
-    color: #6489C6;
-    text-decoration: none;
-    transition: color 0.5s;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .nav-link-wrapper:hover {
-    border-bottom: 1px solid #6489C6;
-  }
-  
-  .nav-link-wrapper a:hover {
-    color: #6489C6;
-  }
-  
-  .hamburger-bar-wrapper {
-    display: inline-block;
-    margin-top: 3px;
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    margin-right: 100px;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3.5px;
-    background-color: black;
-    margin: 4.6px 0;
-    transition: 0.4s;
-    border-radius: 1.75px;
-  }
-  
-  .active .bar.one{
-    transform: translate(0, 8px) rotate(-45deg);
-  }
-  
-  .active .bar.two {
-    opacity: 0;
-  }
-  
-  .active .bar.three {
-    transform: translate(0, -8px) rotate(45deg);
-  }
-  
-  .logo-link-wrapper {
-    min-height: 25px;
-    min-width: 30px;
-    margin-right: 100px;
-  }
-  
-  @keyframes small {
-    0% {left: 0px; margin-right: 135px; opacity: 100; color: #FFE455;}
-    60% {left: 800px; margin-right: 0px; opacity: 0;}
-    100% {display: none; width: 0%; opacity: 0;}
-  }
-  
-  .nav-link-wrapper {
-    position: relative;
-    animation-name: small;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    margin-right: 0px;
-  }
-  
-  .right-nav {
-    display: flex;
-  }
-  
-  .arrow-wrapper {
-    display: flex;
-    align-items: center;
-    margin-right: 40px;
-    transition:  transform 0.3s;
-    visibility: visible;
-  }
-  
-  .arrow {
-    width: 8px;
-    height: 8px;
-    vertical-align: center;
-    border: solid black;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(135deg);
-    cursor: pointer;
-  }
-  
-  .arrow-wrapper.active {
-    transform: rotate(-90deg);
-  }
-  
-  .nav-small {
+
+  .nav-link-wrapper-wrapper {
     display: none;
-    position: absolute;
+  }
+
+  .nav-small {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    position: fixed;
     top: 76px;
     bottom: 0;
     right: 0;
@@ -109,12 +17,6 @@
     background-color: #FFE455;
     transition: color 0.5s;
     transition: background-color 0.5s;
-  }
-  
-  .nav-small.active {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    position: fixed;
   }
   
   .nav-small-link-wrapper {
@@ -139,15 +41,6 @@
   
   .nav-small-link-wrapper a:hover {
     color: #6489C6;
-  }
-  
-  .dot {
-    margin-top: 2px;
-    height: 30px;
-    width: 30px;
-    background-color: cornflowerblue;
-    border-radius: 50%;
-    display: inline-block;
   }
   
   /*Side Bar Styles*/
