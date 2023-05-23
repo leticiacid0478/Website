@@ -101,6 +101,7 @@ p3 {
 
 .left-nav {
   display: flex;
+  flex-direction: row;
 }
 
 .nav-link-wrapper-wrapper {
@@ -188,6 +189,7 @@ p3 {
 
 .right-nav {
   display: flex;
+  flex-direction: row;
 }
 
 .arrow-wrapper {
