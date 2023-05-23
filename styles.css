@@ -66,6 +66,14 @@ p3 {
   z-index: -2;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  /*margin-left: 12em;*/
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /*Navigation styles*/
 .nav-wrapper {
 /*creates flexbox around the navigation wrapper*/
@@ -323,16 +331,6 @@ div.side-bar-wrapper.active {
 
 .side-bar-sublink-wrapper.active {
   display: flex;
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  /*margin-left: 12em;*/
-}
-
-.content-wrapper.small {
-  margin-left: 0em;
 }
 
 .two-row-wrapper {
@@ -682,5 +680,4 @@ li.link.home {
 
 .about-wrapper {
   margin: 2em auto;
-  
 }
