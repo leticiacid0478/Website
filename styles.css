@@ -395,10 +395,9 @@ li.link.home {
 
 /*Wonderings Styles*/
 .page-wrapper {
-  /*margin-left: 200px;
   margin-top: 40px;
   margin-bottom: 80px;
-  max-width: 55em;*/
+  max-width: 55em;
 }
 
 .page-title-wrapper {
@@ -425,8 +424,6 @@ li.link.home {
 
 .article-wrapper {
   padding-top: 20px;
-  padding-left: 200px;
-  padding-right: 300px;
 }
 
 .article-image-wrapper {
@@ -441,7 +438,6 @@ li.link.home {
 /*Lessons Styles*/
 
 .lesson-wrapper {
-  margin-left: 200px;
   margin-top: 40px;
   margin-bottom: 80px;
   max-width: 55em;
@@ -457,7 +453,6 @@ li.link.home {
 .lesson-title-wrapper a:hover {
   text-decoration: underline;
 }
-
 
 .lesson-column-wrapper {
   display: grid;
@@ -576,7 +571,8 @@ li.link.home {
 }
 
 .dr-stone-wrapper {
-  padding-left: 12em;
+  padding-left: 5%;
+  padding-right: 5%;
   overflow: hidden;
 }
 
