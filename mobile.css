@@ -45,7 +45,7 @@
   
   /*Side Bar Styles*/
   
-  @keyframes slide-in {
+ /* @keyframes slide-in {
     0% {width: 0em;}
     100% {width: 12em;}
   }
@@ -75,7 +75,7 @@
     animation-duration: 0.3s;
     animation-direction: alternate;
     visibility: visible;
-  }
+  }*/
   
   .side-bar-content {
     display: flex;
