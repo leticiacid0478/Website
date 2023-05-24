@@ -44,19 +44,6 @@
     display: none;
   }
 
-  .nav-small {
-    display: none;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    position: fixed;
-    top: 76px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #FFE455;
-    transition: color 0.5s;
-    transition: background-color 0.5s;
-  }
-
   .nav-small.active {
     display: grid;
   }

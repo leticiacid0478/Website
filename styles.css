@@ -173,20 +173,6 @@ p3 {
   min-width: 30px;
 }
 
-@keyframes small {
-  0% {left: 0px; margin-right: 135px; opacity: 100; color: #FFE455;}
-  60% {left: 800px; margin-right: 0px; opacity: 0;}
-  100% {display: none; width: 0%; opacity: 0;}
-}
-
-.nav-link-wrapper.small {
-  position: relative;
-  animation-name: small;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  margin-right: 0px;
-}
-
 .right-nav {
   display: flex;
   flex-direction: row;
@@ -194,6 +180,19 @@ p3 {
 
 .arrow-wrapper {
   visibility: hidden;
+}
+
+.nav-small {
+  display: none;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  position: fixed;
+  top: 76px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFE455;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .dot {
