@@ -437,6 +437,8 @@ li.link.home {
 /*Lessons Styles*/
 
 .lesson-wrapper {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
   margin-bottom: 80px;
   max-width: 55em;
@@ -570,22 +572,13 @@ li.link.home {
 }
 
 .dr-stone-wrapper {
-  padding-left: 5%;
-  padding-right: 5%;
+  /*padding-left: 5%;
+  padding-right: 5%;*/
   overflow: hidden;
-}
-
-.dr-stone-wrapper.small {
-  padding-left: 0em;
 }
 
 .cells-at-work-wrapper {
-  padding-left: 12em;
   overflow: hidden;
-}
-
-.cells-at-work-wrapper.small {
-  padding-left: 0em;
 }
 
 .series-wrapper {
