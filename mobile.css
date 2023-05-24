@@ -2,12 +2,50 @@
 
   /*Navigation styles*/
 
+  @keyframes small {
+    0% {left: 0px; margin-right: 135px; opacity: 100; color: #FFE455;}
+    60% {left: 800px; margin-right: 0px; opacity: 0;}
+    100% {display: none; width: 0%; opacity: 0;}
+  }
+  
+  .nav-link-wrapper {
+    position: relative;
+    animation-name: small;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    margin-right: 0px;
+  }
+
+  .arrow-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    transition:  transform 0.3s;
+    visibility: visible;
+  }
+  
+  .arrow {
+    width: 8px;
+    height: 8px;
+    vertical-align: center;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    cursor: pointer;
+  }
+  
+  .arrow-wrapper.active {
+    transform: rotate(-90deg);
+  }
+
   .nav-link-wrapper-wrapper {
     display: none;
   }
 
   .nav-small {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr, 1fr, 1fr, 1fr;
     position: fixed;
     top: 76px;
@@ -17,6 +55,10 @@
     background-color: #FFE455;
     transition: color 0.5s;
     transition: background-color 0.5s;
+  }
+
+  .nav-small.active {
+    display: grid;
   }
   
   .nav-small-link-wrapper {
@@ -43,204 +85,13 @@
     color: #6489C6;
   }
   
-  /*Side Bar Styles*/
-  
- /* @keyframes slide-in {
-    0% {width: 0em;}
-    100% {width: 12em;}
-  }
-  
-  @keyframes slide-in-children {
-    0% {visibility: hidden;}
-    100% {visibility: visible;}
-  }
-  
-  .side-bar-wrapper {
-    display: flex;
-    visibility: hidden;
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 12em;
-    height: 100vh;
-    background-color: #FFE455;
-    position: fixed;
-    top: 76px;
-    animation-fill-mode: forwards;
-    transition: color 0.5s;
-    transition: background-color 0.5s;
-  }
-  
-  div.side-bar-wrapper.active {
-    animation-name: slide-in;
-    animation-duration: 0.3s;
-    animation-direction: alternate;
-    visibility: visible;
-  }*/
-  
-  .side-bar-content {
-    display: flex;
-    padding: 25px;
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .side-bar-content.active {
-    animation-name: slide-in-children;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
-  
-  .side-bar-link-wrapper {
-    display: flex;
-    margin-bottom: 20px;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .side-bar-link-wrapper a {
-    color: #6489C6;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-  }
-  
-  .side-bar-sublink-wrapper {
-    display: none;
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  
-  .side-bar-sublink-wrapper.active {
-    display: flex;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    /*margin-left: 12em;*/
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  .two-row-wrapper {
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    grid-column-start: 2;
-  }
-  
-  .two-row-wrapper {
-    margin-left: 0em;
-  }
-  
-  .two-row-wrapper.dark {
-    background-color: grey;
-  }
-  
   /*Breadcrumb Styles*/
-  ul.breadcrumbs {
-    display: inline-flex;
-    margin-top: 30px;
-    margin-left: 18.25em;
-    list-style-type: disclosure-closed;
-  }
-  
   ul.breadcrumbs {
     margin-left: 3em;
   }
   
   li.link.home {
     list-style-type: none;
-  }
-  
-  .breadcrumbs > li > a {
-    font-family: "Inter", sans-serif;
-    color: darkslategrey;
-    transition: color 0.5s;
-  }
-  
-  .breadcrumbs > li > a:hover {
-    text-decoration: underline;
-  }
-  
-  .breadcrumbs > li {
-    margin-left: 35px;
-    font-family: "Inter", sans-serif;
-    color: darkslategrey;
-    transition: color 0.5s;
-  }
-  
-  /*Home Styles*/
-  
-  .background-wrapper.home {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .block-wrapper {
-    height: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 30px;
-    padding-top: 20px;
-  }
-  
-  .block-wrapper.home {
-    background-color: transparent;
-  }
-  
-  .block-wrapper.wonderings {
-    background-color: #74C7D9;
-  }
-  
-  .block-wrapper.lessons {
-    background-color: #CAF9F3;
-  }
-  
-  .block-wrapper.about {
-    background-color: #74C7D9;
-  }
-  
-  .block-wrapper.weeb {
-    background-color: black;
-    box-shadow: 0px -8px 20px black;
-  }
-  
-  .text-spacer {
-    margin-top: 30px;
-  }
-  
-  .block-wrapper a {
-    font-size: 65px;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    color: black;
-  }
-  
-  .block-wrapper a.dark {
-    color: white;
-  }
-  
-  .thinking-emoji {
-    float: left;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  
-  .lecture-lady {
-    float: right;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  
-  .person {
-    float: right;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  
-  .weeb-in-dark {
-    float: left;
-    margin-right: 50px;
-    margin-left: 50px;
   }
   
   /*Wonderings Styles*/
