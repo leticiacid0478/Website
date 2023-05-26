@@ -83,12 +83,12 @@ p3 {
   padding-right: 35px;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: auto;
+  height: 11%;
   background-color: #FFE455;
   box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 30%);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   transition: color 0.5s;
   transition: background-color 0.5s;
 }
@@ -193,6 +193,7 @@ p3 {
   background-color: #FFE455;
   transition: color 0.5s;
   transition: background-color 0.5s;
+  z-index: 1;
 }
 
 .dot {
