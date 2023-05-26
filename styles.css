@@ -563,10 +563,11 @@ li.link.home {
 }
 
 .description-wrapper {
-  padding-left: 100px;
-  max-width: 800px;
+  padding-left: auto;
+  padding-right: auto;
   padding-bottom: 30px;
   padding-top: 20px;
+  max-width: 800px;
   font-size: 32px;
   font-weight: 400;
   font-family: "Inter", sans-serif;	
@@ -577,8 +578,8 @@ li.link.home {
 }
 
 .dr-stone-wrapper {
-  /*padding-left: 5%;
-  padding-right: 5%;*/
+  padding-left: 5%;
+  padding-right: 5%;
   overflow: hidden;
 }
 
@@ -587,7 +588,8 @@ li.link.home {
 }
 
 .series-wrapper {
-  padding-left: 100px;
+  padding-left: auto;
+  padding-right: auto;
   padding-top: 200px;
 }
 
