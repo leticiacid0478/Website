@@ -326,8 +326,8 @@ li.link.home {
 
 .block-wrapper {
   height: auto;
-  padding-left: 300px;
-  padding-right: 300px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 30px;
   padding-top: 20px;
 }
