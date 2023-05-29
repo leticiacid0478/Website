@@ -104,6 +104,10 @@ p3 {
   flex-direction: row;
 }
 
+.nav-link-wrapper-wrapper-wrapper {
+  overflow: hidden;
+}
+
 .nav-link-wrapper-wrapper {
   display: flex;
   justify-content: space-between;

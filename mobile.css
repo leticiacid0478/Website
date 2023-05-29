@@ -3,16 +3,19 @@
   /*Navigation styles*/
 
   @keyframes small {
-    0% {left: 0px; margin-right: 135px; opacity: 100; color: #FFE455;}
-    60% {left: 800px; margin-right: 0px; opacity: 0;}
-    100% {display: none; width: 0%; opacity: 0;}
+    0% {margin-left: 0%; opacity: 100; color: #FFE455;}
+    60% {margin-left: 100%; opacity: 0;}
+    100% {display: none; opacity: 0;}
   }
   
-  .nav-link-wrapper {
-    position: relative;
+  .nav-link-wrapper-wrapper {
     animation-name: small;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+  }
+
+  .nav-link-wrapper {
+    position: relative;
     margin-right: 0px;
   }
 
@@ -38,10 +41,6 @@
   
   .arrow-wrapper.active {
     transform: rotate(-90deg);
-  }
-
-  .nav-link-wrapper-wrapper {
-    display: none;
   }
 
   .nav-small.active {
