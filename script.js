@@ -93,7 +93,7 @@ window.onresize = function() {
       }
     }
     for (let i = 0; i < allBlockWrappers.length; i++) {
-      allBlockWrappers[i].style.height = (tallest + "px");
+      allBlockWrappers[i].style.height = (tallest + 10 + "px");
     }
     contentWrapper.style.marginTop = (-(backgroundWrapper.offsetHeight) + "px");
   }
@@ -196,7 +196,7 @@ function lightMode() {
   }
 }
 
-window.onscroll = function() {darkModeOnScroll()}; 
+window.onscroll = function() {darkModeOnScroll(), showChange()}; 
 function darkModeOnScroll() { 
   breadcrumbsLi = document.querySelectorAll(".breadcrumbs li");
   if (breadcrumbsLi.length == 1) {
@@ -212,7 +212,9 @@ function darkModeOnScroll() {
       lightMode();
     }
   }
+}
 
+function showChange() {
   if (breadcrumbsLi.length > 1 && breadcrumbsLi[1].innerHTML == "Weeb Corner") {
     // called when the window is scrolled.
     let documentHeight = document.body.scrollHeight;
