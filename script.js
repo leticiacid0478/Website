@@ -18,7 +18,7 @@ const breadcrumbs = document.querySelector(".breadcrumbs");
 
 const backgroundWrapper = document.querySelector(".background-wrapper");
 if (breadcrumbsLi.length ==1) {
-  var contentBlockWrappers = document.querySelector(".content-wrapper").children;
+  var contentBlockWrappers = document.querySelector(".home-wrapper").children;
   var allBlockWrappers = document.querySelectorAll(".block-wrapper");
   var allBlockTitles = document.querySelectorAll(".block-wrapper a");
   var tallest = 0;
