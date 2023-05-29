@@ -93,7 +93,7 @@ window.onresize = function() {
       }
     }
     for (let i = 0; i < allBlockWrappers.length; i++) {
-      allBlockWrappers[i].style.height = (tallest + 10 + "px");
+      allBlockWrappers[i].style.height = (tallest + 20 + "px");
     }
     contentWrapper.style.marginTop = (-(backgroundWrapper.offsetHeight) + "px");
   }
@@ -113,7 +113,7 @@ if (breadcrumbsLi.length ==1) {
     }
   }
   for (let i = 0; i < allBlockWrappers.length; i++) {
-    allBlockWrappers[i].style.height = (tallest + "px");
+    allBlockWrappers[i].style.height = (tallest + 20 + "px");
   }
   contentWrapper.style.marginTop = (-(backgroundWrapper.offsetHeight) + "px");
 }
