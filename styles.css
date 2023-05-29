@@ -578,12 +578,14 @@ li.link.home {
 }
 
 .dr-stone-wrapper {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
   overflow: hidden;
 }
 
 .cells-at-work-wrapper {
+  padding-left: 8%;
+  padding-right: 8%;
   overflow: hidden;
 }
 
