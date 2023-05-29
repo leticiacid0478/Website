@@ -138,6 +138,10 @@ window.onresize = function() {
                      //Home Script
 
 if (breadcrumbsLi.length ==1) {
+  tallest = 0;
+    for (let i = 0; i < contentBlockWrappers.length; i++) {
+      contentBlockWrappers[i].style.height = ("auto");
+    }
   for (let i = 0; i < contentBlockWrappers.length; i++) {
     if (contentBlockWrappers[i].offsetHeight > tallest) {
       tallest = contentBlockWrappers[i].offsetHeight;
