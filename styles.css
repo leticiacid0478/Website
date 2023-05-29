@@ -339,23 +339,28 @@ li.link.home {
 
 .block-wrapper.home {
   background-color: transparent;
+  max-width: none;
 }
 
 .block-wrapper.wonderings {
   background-color: #74C7D9;
+  max-width: none;
 }
 
 .block-wrapper.lessons {
   background-color: #CAF9F3;
+  max-width: none;
 }
 
 .block-wrapper.about {
   background-color: #74C7D9;
+  max-width: none;
 }
 
 .block-wrapper.weeb {
   background-color: black;
   box-shadow: 0px -8px 20px black;
+  max-width: none;
 }
 
 .text-spacer {
