@@ -15,9 +15,9 @@
   }
   
   .nav-link-wrapper-wrapper {
+    animation-fill-mode: forwards;
     animation-name: small;
     animation-duration: 0.5s;
-    animation-fill-mode: forwards;
   }
 
   .nav-link-wrapper {
