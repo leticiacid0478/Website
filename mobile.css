@@ -10,8 +10,8 @@
   }
 
   .nav-link-wrapper-wrapper-wrapper {
-    height: auto;
-    width: auto;
+    height: min-content;
+    width: min-content;
   }
   
   .nav-link-wrapper-wrapper {
