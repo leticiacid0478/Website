@@ -6,7 +6,7 @@
     0% {margin-left: 0%; opacity: 100;}
     60% {margin-left: 100%; opacity: 0;}
     99% {opacity: 0; display: block}
-    100% {display: none;}
+    100% {display: none; opacity: 0;}
   }
 
   .nav-link-wrapper-wrapper-wrapper {
